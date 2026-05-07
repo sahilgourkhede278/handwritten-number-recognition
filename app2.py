@@ -138,9 +138,8 @@ def train_and_save_model():
 
 @st.cache_resource
 def load_digit_model():
-    if os.path.exists(MODEL_FILE):
-        return load_model(MODEL_FILE)
-    return train_and_save_model()
+    return load_model(MODEL_FILE)
+    
 
 
 # -------------------------------
