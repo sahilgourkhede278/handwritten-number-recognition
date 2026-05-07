@@ -1,5 +1,5 @@
 streamlit
+tensorflow
 numpy
 pillow
 streamlit-drawable-canvas
-keras
