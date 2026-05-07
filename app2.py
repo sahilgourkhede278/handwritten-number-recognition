@@ -6,9 +6,10 @@ import streamlit as st
 from PIL import Image, ImageOps, ImageFilter
 from streamlit_drawable_canvas import st_canvas
 
-from keras.datasets import mnist
-from keras.models import Sequential, load_model
-from keras.layers import (
+import tensorflow as tf
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import (
     Input,
     Conv2D,
     MaxPooling2D,
@@ -17,9 +18,9 @@ from keras.layers import (
     Flatten,
     BatchNormalization
 )
-from keras.utils import to_categorical
-from keras.callbacks import EarlyStopping, ModelCheckpoint
-from keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 st.set_page_config(page_title="0 to 999 Number Recognition", layout="centered")
 
